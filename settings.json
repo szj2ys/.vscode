@@ -1,0 +1,433 @@
+{
+    // ============================================================================
+    // BASIC EDITOR SETTINGS
+    // ============================================================================
+
+    // Editor font and appearance
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 15,
+    "editor.lineHeight": 1.5,
+    "editor.fontLigatures": true,
+
+    // Window and zoom settings
+    "window.zoomLevel": 1.2,
+    "window.dialogStyle": "custom",
+
+    // Basic editor behavior
+    "editor.wordWrap": "on",
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.smoothScrolling": true,
+
+    // ============================================================================
+    // EDITOR CURSOR & ANIMATION
+    // ============================================================================
+
+    // Cursor settings
+    "editor.cursorBlinking": "expand",
+    "editor.cursorSmoothCaretAnimation": "on",
+    // Cursor style, options: "line", "block", "block-outline", "underline"
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 2,
+
+    // ============================================================================
+    // EDITOR UI & VISUAL ELEMENTS
+    // ============================================================================
+
+    // Visual guides and rulers
+    "editor.rulers": [
+        {
+            "column": 99,
+            "color": "#FFFFFF"
+        },
+        {
+            "column": 119,
+            "color": "#90EE90"
+        }
+    ],
+
+    // Indentation guides
+    "editor.guides.indentation": true,
+    "editor.guides.highlightActiveBracketPair": true,
+
+    // Bracket pair guides and colorization
+    "editor.guides.bracketPairs": true,
+    "editor.bracketPairColorization.enabled": true,
+
+    // Editor visual elements
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+
+    // Code folding settings
+    "editor.folding": true,
+    "editor.foldingHighlight": true,
+    "editor.showFoldingControls": "always",
+    "editor.foldingStrategy": "indentation",
+
+    // Sticky scroll settings
+    "editor.stickyScroll.defaultModel": "outlineModel",
+    "editor.stickyScroll.enabled": true,
+
+    // ============================================================================
+    // EDITOR HOVER & TOOLTIP BEHAVIOR
+    // ============================================================================
+
+    // Mouse hover settings
+    "editor.hover.enabled": true,
+    "editor.hover.delay": 300,
+    "editor.hover.hidingDelay": 300,
+    "editor.hover.sticky": true,
+    // When reading code from top to bottom, hover tooltip appearing above can block content
+    "editor.hover.above": false,
+
+    // ============================================================================
+    // CODE EDITING & SUGGESTIONS
+    // ============================================================================
+
+    // Code suggestions and auto-completion
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+
+    // Control whether active snippets prevent quick suggestions
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    // Whether `Enter` key accepts suggestions in addition to `Tab` key
+    // This reduces ambiguity between "insert new line" and "accept suggestion" commands
+    "editor.acceptSuggestionOnEnter": "smart",
+    // Prioritize recent suggestions in code completion list
+    "editor.suggestSelection": "recentlyUsed",
+    // Suggestion insert mode
+    "editor.suggest.insertMode": "replace",
+
+    // Auto-closing settings
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingDelete": "always",
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.autoClosingComments": "always",
+
+    // Word separators for selection
+    "editor.wordSeparators": "`~!@%^&*()=+[{]}\\|;:'\",.<>/?（），。；：",
+
+    // ============================================================================
+    // CODE FORMATTING & ACTIONS
+    // ============================================================================
+
+    // Auto-format code on save
+    "editor.formatOnSave": true,
+    // Format on paste
+    "editor.formatOnPaste": true,
+
+    // Auto-fix ESLint errors on save
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+
+    // Whether to copy with syntax highlighting
+    "editor.copyWithSyntaxHighlighting": false,
+
+    // ============================================================================
+    // NAVIGATION & GO-TO BEHAVIOR
+    // ============================================================================
+
+    // Go to location settings
+    "editor.gotoLocation.alternativeImplementationCommand": "editor.action.goToReferences",
+    "editor.gotoLocation.alternativeReferenceCommand": "editor.action.goToReferences",
+
+    // Go to definition behavior
+    "editor.gotoLocation.multipleDefinitions": "peek",
+    "editor.gotoLocation.multipleImplementations": "peek",
+    "editor.gotoLocation.multipleReferences": "peek",
+
+    // ============================================================================
+    // SEARCH & FIND BEHAVIOR
+    // ============================================================================
+
+    // Search settings
+    "search.smartCase": true,
+    "search.globalFindClipboard": true,
+    "search.useIgnoreFiles": true,
+    "search.followSymlinks": false,
+    "search.collapseResults": "auto",
+    "search.seedOnFocus": true,
+
+    // Search editor behavior
+    "search.searchEditor.singleClickBehaviour": "peekDefinition",
+
+    // Search exclude directories
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/pnpm-lock.yaml": true,
+        "**/package-lock.json": true,
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.gitignore": true,
+        "**/.idea": true,
+        "**/.svn": true,
+        "**/.venv": true,
+        "**/.vscode": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/tmp": true,
+        "**/yarn.lock": true
+    },
+
+    // Find behavior
+    "editor.find.addExtraSpaceOnTop": true,
+    // Disable other auto-copy behaviors when selecting
+    "editor.find.seedSearchStringFromSelection": "never",
+    "editor.find.autoFindInSelection": "never",
+
+    // ============================================================================
+    // FILE & WORKSPACE SETTINGS
+    // ============================================================================
+
+    // Auto-save files after delay
+    "files.autoSave": "afterDelay",
+
+    // File encoding and whitespace
+    "files.autoGuessEncoding": true,
+    "files.trimTrailingWhitespace": false,
+
+    // Hide Python cache files
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+
+    // File associations
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+
+    // Workspace trust settings
+    "security.workspace.trust.untrustedFiles": "open",
+
+    // ============================================================================
+    // EXPLORER & NAVIGATION
+    // ============================================================================
+
+    // File explorer settings
+    "explorer.compactFolders": false,
+    // Whether to show .gitignore files in explorer
+    "explorer.excludeGitIgnore": false,
+    // Auto-locate and highlight current file in file tree
+    "explorer.autoReveal": true,
+    "explorer.autoRevealExclude": {},
+
+    // Editor tab settings
+    "explorer.openEditors.minVisible": 8,
+    // Activate previous tab (left tab) after closing current tab
+    "workbench.editor.focusRecentEditorAfterClose": true,
+    // Disable preview mode for files
+    "workbench.editor.enablePreview": false,
+
+    // ============================================================================
+    // WORKBENCH & UI SETTINGS
+    // ============================================================================
+
+    // Command palette enhancements
+    "workbench.commandPalette.experimental.suggestCommands": true,
+    "workbench.commandPalette.preserveInput": true,
+
+    // Workbench smooth scrolling
+    "workbench.list.smoothScrolling": true,
+
+    // Sticky scroll in file tree
+    "workbench.tree.enableStickyScroll": true,
+
+    // Color customizations
+    "workbench.colorCustomizations": {
+        // Background color for current line highlight
+        "editor.lineHighlightBackground": "#000000"
+    },
+
+    // ============================================================================
+    // TERMINAL SETTINGS
+    // ============================================================================
+
+    // Terminal appearance
+    "terminal.integrated.fontFamily": "monospace",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.lineHeight": 1.2,
+
+    // Terminal cursor settings
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorWidth": 2,
+
+    // Terminal behavior
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.stickyScroll.enabled": true,
+
+    // Terminal shell integration
+    "terminal.integrated.shellIntegration.suggestEnabled": true,
+
+    // Environment variables for terminal
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}"
+    },
+
+    // ============================================================================
+    // GIT & VERSION CONTROL
+    // ============================================================================
+
+    // Git settings
+    "git.decorations.enabled": true,
+    "git.enableCommitSigning": false,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "git.autofetchPeriod": 180,
+    // Auto-stash changes before pull
+    "git.autoStash": true,
+    // Git repository settings
+    "git.openRepositoryInParentFolders": "always",
+
+    // Source control settings
+    "scm.diffDecorations": "all",
+    "scm.alwaysShowRepositories": true,
+
+    // ============================================================================
+    // PYTHON DEVELOPMENT
+    // ============================================================================
+
+    // Python language server
+    // Fix Python jump to definition with following config
+    "python.languageServer": "Pylance",
+    // "python.languageServer": "Jedi",
+
+    // Python analysis settings
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.enableTroubleshootMissingImports": true,
+    "python.analysis.typeCheckingMode": "basic",
+    // Control whether Pylance analyzes third-party library source code for more accurate type information
+    "python.analysis.useLibraryCodeForTypes": true,
+    // Python analysis enhancements
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.indexing": true,
+    "python.analysis.completeFunctionParens": true,
+
+    // Python environment settings
+    "python.disableInstallationCheck": false,
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+
+    // Python terminal settings
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.shellIntegration.enabled": true,
+    // Whether to execute Python file in current file directory
+    "python.terminal.executeInFileDir": false,
+    // Focus terminal after launching Python
+    "python.terminal.focusAfterLaunch": true,
+
+    // Python linting and formatting tool configurations
+    "isort.args": [
+        "--settings-path=${workspaceFolder}/pyproject.toml"
+    ],
+    "black-formatter.args": [
+        "--config=${workspaceFolder}/pyproject.toml"
+    ],
+    "flake8.args": [
+        "--config=${workspaceFolder}/pyproject.toml"
+    ],
+    "mypy-type-checker.args": [
+        "--config-file=${workspaceFolder}/pyproject.toml"
+    ],
+    "pylint.args": [
+        "--rcfile=${workspaceFolder}/pyproject.toml"
+    ],
+
+    // Python-specific editor settings
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        },
+        "editor.formatOnSave": true
+    },
+
+    // Python testing configuration
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    // Python testing framework settings
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+
+    // ============================================================================
+    // JAVASCRIPT/TYPESCRIPT DEVELOPMENT
+    // ============================================================================
+
+    // Prefer source definition for TypeScript/JavaScript
+    "typescript.preferGoToSourceDefinition": true,
+    "javascript.preferGoToSourceDefinition": true,
+
+    // Auto-remove semicolons during formatting
+    "javascript.format.semicolons": "remove",
+    "typescript.format.semicolons": "remove",
+
+    // TypeScript inlay hints
+    "typescript.inlayHints.enumMemberValues.enabled": true,
+    "typescript.locale": "zh-CN",
+
+    // Type hints for JavaScript
+    "javascript.inlayHints.enumMemberValues.enabled": true,
+    "javascript.inlayHints.functionLikeReturnTypes.enabled": false,
+    "javascript.inlayHints.parameterNames.enabled": "none",
+
+    // Auto-import suggestions
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+
+    // Auto-update imports and preferences
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.includePackageJsonAutoImports": "on",
+    "typescript.preferences.preferTypeOnlyAutoImports": true,
+    "typescript.preferences.quoteStyle": "single",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.quoteStyle": "single",
+
+    // ============================================================================
+    // VUE.JS DEVELOPMENT
+    // ============================================================================
+
+    // Vue.js settings
+    "vue.inlayHints.missingProps": true,
+    "vue.autoInsert.dotValue": true,
+    // Auto-update imports on file move
+    "vue.updateImportsOnFileMove.enabled": true,
+
+    // ============================================================================
+    // NOTEBOOK SETTINGS
+    // ============================================================================
+
+    // Notebook compact view
+    "notebook.compactView": true,
+
+    // ============================================================================
+    // EXTENSIONS & TELEMETRY
+    // ============================================================================
+
+    // Show extension recommendations
+    "extensions.ignoreRecommendations": false,
+
+    // Disable Red Hat telemetry
+    "redhat.telemetry.enabled": false,
+
+    // ============================================================================
+    // OTHER SETTINGS
+    // ============================================================================
+
+    "liveServer.settings.root": "/workspace"
+    // "liveServer.settings.root": "Jedi"
+}
