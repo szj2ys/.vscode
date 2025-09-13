@@ -1,7 +1,8 @@
 # My vscode Development Configuration
 
 Optimized workspace settings for Python/JavaScript/TypeScript development.
-
+![window](resources/window.png)
+> One Hunter Theme (Vercel)
 ## Features
 - **Python**: Pylance integration, virtual environment auto-activation, formatting with Black/isort
 - **Editor**: Enhanced productivity with sticky scroll, hover delays, bracket colorization
