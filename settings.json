@@ -148,7 +148,7 @@
     // Search settings
     "search.smartCase": true,
     "search.globalFindClipboard": true,
-    "search.useIgnoreFiles": true,
+    "search.useIgnoreFiles": false,
     "search.followSymlinks": false,
     "search.collapseResults": "auto",
     "search.seedOnFocus": true,
