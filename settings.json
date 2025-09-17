@@ -152,6 +152,7 @@
     "search.followSymlinks": false,
     "search.collapseResults": "auto",
     "search.seedOnFocus": true,
+    "search.searchOnType": true,
 
     // Search editor behavior
     "search.searchEditor.singleClickBehaviour": "peekDefinition",
@@ -177,7 +178,7 @@
     // Find behavior
     "editor.find.addExtraSpaceOnTop": true,
     // Disable other auto-copy behaviors when selecting
-    "editor.find.seedSearchStringFromSelection": "never",
+    "editor.find.seedSearchStringFromSelection": "always",
     "editor.find.autoFindInSelection": "never",
 
     // ============================================================================
