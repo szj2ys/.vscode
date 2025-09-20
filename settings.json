@@ -238,25 +238,6 @@
     // Sticky scroll in file tree
     "workbench.tree.enableStickyScroll": true,
 
-    // Color customizations
-    "workbench.colorCustomizations": {
-        // Background color for current line highlight
-        "editor.lineHighlightBackground": "#000000",
-        // Terminal color settings
-        "terminal.foreground": "#00FF00", // 终端字体颜色
-        "terminal.background": "#000000", // 终端背景颜色
-        "terminalCursor.foreground": "#FFFFFF", // 终端光标颜色
-        "terminalCursor.background": "#FFFFFF", // 终端光标背景颜色
-        "terminal.ansiBlack": "#000000", // ANSI 黑色
-        "terminal.ansiBlue": "#0000FF", // ANSI 蓝色
-        "terminal.ansiCyan": "#00FFFF", // ANSI 青色
-        "terminal.ansiGreen": "#00FF00", // ANSI 绿色
-        "terminal.ansiMagenta": "#FF00FF", // ANSI 洋红色
-        "terminal.ansiRed": "#FF0000", // ANSI 红色
-        "terminal.ansiWhite": "#FFFFFF", // ANSI 白色
-        "terminal.ansiYellow": "#FFFF00" // ANSI 黄色
-    },
-
     // ============================================================================
     // TERMINAL SETTINGS
     // ============================================================================
