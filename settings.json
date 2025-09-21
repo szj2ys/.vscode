@@ -228,6 +228,11 @@
     // WORKBENCH & UI SETTINGS
     // ============================================================================
 
+    // Auto theme switching based on system
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredDarkColorTheme": "One Hunter Theme Vercel",
+    "workbench.preferredLightColorTheme": "One Hunter Theme Light",
+
     // Command palette enhancements
     "workbench.commandPalette.experimental.suggestCommands": true,
     "workbench.commandPalette.preserveInput": true,
