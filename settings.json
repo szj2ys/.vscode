@@ -190,6 +190,7 @@
 
     // File encoding and whitespace
     "files.autoGuessEncoding": true,
+    "files.encoding": "utf8",
     "files.trimTrailingWhitespace": false,
 
     // Hide Python cache files
@@ -266,15 +267,25 @@
     // Terminal shell integration
     "terminal.integrated.shellIntegration.suggestEnabled": true,
 
+    // Terminal encoding settings for fixing Chinese character display issues
+    "terminal.integrated.unicodeVersion": "11",
+    "terminal.integrated.allowWorkspaceConfiguration": true,
+
     // Environment variables for terminal
     "terminal.integrated.env.windows": {
-        "PYTHONPATH": "${workspaceFolder}"
+        "PYTHONPATH": "${workspaceFolder}",
+        "LANG": "zh_CN.UTF-8",
+        "LC_ALL": "zh_CN.UTF-8"
     },
     "terminal.integrated.env.linux": {
-        "PYTHONPATH": "${workspaceFolder}"
+        "PYTHONPATH": "${workspaceFolder}",
+        "LANG": "zh_CN.UTF-8",
+        "LC_ALL": "zh_CN.UTF-8"
     },
     "terminal.integrated.env.osx": {
-        "PYTHONPATH": "${workspaceFolder}"
+        "PYTHONPATH": "${workspaceFolder}",
+        "LANG": "zh_CN.UTF-8",
+        "LC_ALL": "zh_CN.UTF-8"
     },
 
     // ============================================================================
