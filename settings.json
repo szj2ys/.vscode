@@ -34,18 +34,7 @@
     // EDITOR UI & VISUAL ELEMENTS
     // ============================================================================
 
-    // Visual guides and rulers
-    "editor.rulers": [
-        {
-            "column": 99,
-            "color": "#FFFFFF"
-        },
-        {
-            "column": 119,
-            "color": "#90EE90"
-        }
-    ],
-
+    // Visual guides
     // Indentation guides
     "editor.guides.indentation": true,
     "editor.guides.highlightActiveBracketPair": true,
