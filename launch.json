@@ -103,6 +103,8 @@
             "program": "${file}",
             // "console": "integratedTerminal",
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
@@ -122,6 +124,8 @@
             ],
             // "console": "integratedTerminal",
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}",
@@ -145,6 +149,8 @@
             ],
             // "console": "integratedTerminal",
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true,
             "cwd": "${fileDirname}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
@@ -163,6 +169,8 @@
             ],
             // "console": "integratedTerminal",
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true,
             "cwd": "${fileDirname}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
@@ -180,6 +188,8 @@
             ],
             // "console": "integratedTerminal",
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
@@ -197,6 +207,8 @@
             ],
             // "console": "integratedTerminal",
             "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}"
