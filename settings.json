@@ -444,7 +444,7 @@
         // "code-runner.runInTerminal": false时候需要配置PYTHONPATH，Code Runner 是直接调用子进程运行命令，它完全不经过 VS Code 的集成终端，所以它根本读取不到 terminal.integrated.env.* 里的配置
         "python": "py_path='$pythonPath'; activate_script=\"${py_path%python}activate\"; source \"$activate_script\" && export PYTHONPATH=$workspaceRoot:$workspaceRoot/src && \"$py_path\" -u $fullFileName"
     },
-    "code-runner.runInTerminal": true,
+    "code-runner.runInTerminal": false,
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveFileBeforeRun": true
 }
