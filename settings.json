@@ -262,17 +262,17 @@
 
     // Environment variables for terminal
     "terminal.integrated.env.windows": {
-        "PYTHONPATH": "${workspaceFolder}",
+        "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/src",
         "LANG": "zh_CN.UTF-8",
         "LC_ALL": "zh_CN.UTF-8"
     },
     "terminal.integrated.env.linux": {
-        "PYTHONPATH": "${workspaceFolder}",
+        "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/src",
         "LANG": "zh_CN.UTF-8",
         "LC_ALL": "zh_CN.UTF-8"
     },
     "terminal.integrated.env.osx": {
-        "PYTHONPATH": "${workspaceFolder}",
+        "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/src",
         "LANG": "zh_CN.UTF-8",
         "LC_ALL": "zh_CN.UTF-8"
     },
@@ -428,6 +428,23 @@
     // OTHER SETTINGS
     // ============================================================================
 
-    "liveServer.settings.root": "/workspace"
+    "liveServer.settings.root": "/workspace",
     // "liveServer.settings.root": "Jedi"
+
+    // ============================================================================
+    // CODE RUNNER
+    // ============================================================================
+    "code-runner.executorMap": {
+        // 逻辑解释：
+        // 1. 定义变量 py_path 为当前解释器路径
+        // 2. 定义变量 activate_script，通过将 py_path 里的 "python" 替换为 "activate" 得到
+        // 3. source 激活脚本
+        // 4. 设置 PYTHONPATH
+        // 5. 运行 python
+        // "code-runner.runInTerminal": false时候需要配置PYTHONPATH，Code Runner 是直接调用子进程运行命令，它完全不经过 VS Code 的集成终端，所以它根本读取不到 terminal.integrated.env.* 里的配置
+        "python": "py_path='$pythonPath'; activate_script=\"${py_path%python}activate\"; source \"$activate_script\" && export PYTHONPATH=$workspaceRoot:$workspaceRoot/src && \"$py_path\" -u $fullFileName"
+    },
+    "code-runner.runInTerminal": false,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveFileBeforeRun": true
 }
