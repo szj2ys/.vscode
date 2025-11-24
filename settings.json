@@ -260,19 +260,25 @@
     "terminal.integrated.unicodeVersion": "11",
     "terminal.integrated.allowWorkspaceConfiguration": true,
 
+    // Enable editor completions/jumps (Pylance)
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/src"
+    ]
+
     // Environment variables for terminal
     "terminal.integrated.env.windows": {
-        "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/src",
+        "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src",
         "LANG": "zh_CN.UTF-8",
         "LC_ALL": "zh_CN.UTF-8"
     },
     "terminal.integrated.env.linux": {
-        "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/src",
+        "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src",
         "LANG": "zh_CN.UTF-8",
         "LC_ALL": "zh_CN.UTF-8"
     },
     "terminal.integrated.env.osx": {
-        "PYTHONPATH": "${workspaceFolder};${workspaceFolder}/src",
+        "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src",
         "LANG": "zh_CN.UTF-8",
         "LC_ALL": "zh_CN.UTF-8"
     },
@@ -446,5 +452,10 @@
     },
     "code-runner.runInTerminal": false,
     "code-runner.clearPreviousOutput": true,
-    "code-runner.saveFileBeforeRun": true
+    "code-runner.saveFileBeforeRun": true,
+    "windows": {
+        "code-runner.executorMap": {
+            "python": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$env:PYTHONPATH='$workspaceRoot;$workspaceRoot\\src'; & '$pythonPath' -u '$fullFileName'\""
+        }
+    }
 }
