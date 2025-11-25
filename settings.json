@@ -267,7 +267,7 @@
     "python.analysis.extraPaths": [
         "${workspaceFolder}",
         "${workspaceFolder}/src"
-    ]
+    ],
 
     // Environment variables for terminal
     "terminal.integrated.env.windows": {
