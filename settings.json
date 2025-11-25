@@ -223,6 +223,9 @@
     "workbench.preferredDarkColorTheme": "One Hunter Theme Vercel",
     "workbench.preferredLightColorTheme": "One Hunter Theme Light",
 
+    // Auto-open Debug view when a session starts
+    "debug.openDebug": "openOnSessionStart",
+
     // Command palette enhancements
     "workbench.commandPalette.experimental.suggestCommands": true,
     "workbench.commandPalette.preserveInput": true,
@@ -335,7 +338,7 @@
     // Whether to execute Python file in current file directory
     "python.terminal.executeInFileDir": false,
     // Focus terminal after launching Python
-    "python.terminal.focusAfterLaunch": true,
+    "python.terminal.focusAfterLaunch": false,
 
     // Python linting and formatting tool configurations
     "isort.args": [

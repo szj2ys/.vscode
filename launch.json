@@ -101,6 +101,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
+            "args": ["${input:pythonArgs}"],
             // "console": "integratedTerminal",
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
