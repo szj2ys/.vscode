@@ -9,8 +9,13 @@
             "type": "node",
             "request": "launch",
             "program": "${file}",
-            "args": ["${relativeFile}"],
-            "runtimeArgs": ["-r", "ts-node/register"],
+            "args": [
+                "${relativeFile}"
+            ],
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
             "cwd": "${workspaceFolder}",
             "internalConsoleOptions": "openOnSessionStart",
             "outputCapture": "std",
@@ -43,7 +48,6 @@
                 "NODE_ENV": "development"
             }
         },
-
         // ============================================================================
         // NEXT.JS DEBUGGING
         // ============================================================================
@@ -92,7 +96,6 @@
                 "action": "debugWithChrome"
             }
         },
-
         // ============================================================================
         // PYTHON DEBUGGING
         // ============================================================================
@@ -101,7 +104,12 @@
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
-            "args": ["${input:pythonArgs}"],
+            "args": [
+                "--limit",
+                "0",
+                "--debug",
+                "True",
+            ],
             // "console": "integratedTerminal",
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
@@ -125,8 +133,10 @@
             "args": [
                 "main:app",
                 "--reload",
-                "--host", "0.0.0.0",
-                "--port", "8000"
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8000"
             ],
             // "console": "integratedTerminal",
             "console": "internalConsole",
@@ -145,7 +155,6 @@
             },
             "justMyCode": false
         },
-
         // ============================================================================
         // PYTHON TESTING
         // ============================================================================
