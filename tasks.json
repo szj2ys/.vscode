@@ -4,7 +4,7 @@
     {
       "label": "py: run current file",
       "type": "shell",
-      "command": "start=$(date +%s); ${config:python.defaultInterpreterPath} \"${file}\" --verbose True --log-level DEBUG; exit_code=$?; end=$(date +%s); elapsed=$((end - start)); printf \"Elapsed: %02d:%02d:%02d\\n\" $((elapsed/3600)) $(((elapsed%3600)/60)) $((elapsed%60)); exit $exit_code",
+      "command": "start=$(date +%s); ${config:python.defaultInterpreterPath} \"${file}\" --verbose True; end=$(date +%s); elapsed=$((end - start)); echo; printf \"Elapsed: %02d:%02d:%02d\\n\" $((elapsed/3600)) $(((elapsed%3600)/60)) $((elapsed%60));",
       "options": {
         "cwd": "${workspaceFolder}",
         "shell": {

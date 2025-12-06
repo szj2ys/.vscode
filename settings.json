@@ -446,7 +446,7 @@
     // CODE RUNNER
     // ============================================================================
     "code-runner.executorMap": {
-        "python": "py_path='$pythonPath'; activate_script=\"${py_path%python}activate\"; start=$(date +%s); if [ -f \"$activate_script\" ]; then source \"$activate_script\"; fi; export PYTHONPATH=$workspaceRoot:$workspaceRoot/src; \"$py_path\" -u \"$fullFileName\"; rc=$?; end=$(date +%s); elapsed=$((end-start)); printf \"Elapsed: %02d:%02d:%02d\\n\" $((elapsed/3600)) $(((elapsed%3600)/60)) $((elapsed%60)); exit $rc"
+        "python": "py_path='$pythonPath'; activate_script=\"${py_path%python}activate\"; start=$(date +%s); if [ -f \"$activate_script\" ]; then source \"$activate_script\"; fi; export PYTHONPATH=$workspaceRoot:$workspaceRoot/src; \"$py_path\" -u \"$fullFileName\"; end=$(date +%s); elapsed=$((end-start)); echo; printf \"Elapsed: %02d:%02d:%02d\\n\" $((elapsed/3600)) $(((elapsed%3600)/60)) $((elapsed%60));"
     },
     "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
