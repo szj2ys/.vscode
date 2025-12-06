@@ -225,6 +225,8 @@
 
     // Auto-open Debug view when a session starts
     "debug.openDebug": "openOnSessionStart",
+    // Do not steal focus from the current panel (e.g., Debug Console) when a breakpoint is hit
+    "debug.focusWindowOnBreak": false,
 
     // Command palette enhancements
     "workbench.commandPalette.experimental.suggestCommands": true,
@@ -444,16 +446,9 @@
     // CODE RUNNER
     // ============================================================================
     "code-runner.executorMap": {
-        // 逻辑解释：
-        // 1. 定义变量 py_path 为当前解释器路径
-        // 2. 定义变量 activate_script，通过将 py_path 里的 "python" 替换为 "activate" 得到
-        // 3. source 激活脚本
-        // 4. 设置 PYTHONPATH
-        // 5. 运行 python
-        // "code-runner.runInTerminal": false时候需要配置PYTHONPATH，Code Runner 是直接调用子进程运行命令，它完全不经过 VS Code 的集成终端，所以它根本读取不到 terminal.integrated.env.* 里的配置
-        "python": "py_path='$pythonPath'; activate_script=\"${py_path%python}activate\"; source \"$activate_script\" && export PYTHONPATH=$workspaceRoot:$workspaceRoot/src && \"$py_path\" -u $fullFileName"
+        "python": "py_path='$pythonPath'; activate_script=\"${py_path%python}activate\"; start=$(date +%s); if [ -f \"$activate_script\" ]; then source \"$activate_script\"; fi; export PYTHONPATH=$workspaceRoot:$workspaceRoot/src; \"$py_path\" -u \"$fullFileName\"; rc=$?; end=$(date +%s); elapsed=$((end-start)); printf \"Elapsed: %02d:%02d:%02d\\n\" $((elapsed/3600)) $(((elapsed%3600)/60)) $((elapsed%60)); exit $rc"
     },
-    "code-runner.runInTerminal": false,
+    "code-runner.runInTerminal": true,
     "code-runner.clearPreviousOutput": true,
     "code-runner.saveFileBeforeRun": true,
     "windows": {

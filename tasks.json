@@ -3,17 +3,17 @@
   "tasks": [
     {
       "label": "py: run current file",
-      "type": "process",
-      "command": "${config:python.defaultInterpreterPath}",
-      "args": [
-        "${file}",
-        "--verbose",
-        "True",
-        "--log-level",
-        "DEBUG"
-      ],
+      "type": "shell",
+      "command": "start=$(date +%s); ${config:python.defaultInterpreterPath} \"${file}\" --verbose True --log-level DEBUG; exit_code=$?; end=$(date +%s); elapsed=$((end - start)); printf \"Elapsed: %02d:%02d:%02d\\n\" $((elapsed/3600)) $(((elapsed%3600)/60)) $((elapsed%60)); exit $exit_code",
       "options": {
         "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "/bin/zsh",
+          "args": [
+            "-i",
+            "-lc"
+          ]
+        },
         "env": {
           "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}:${workspaceFolder}/src"
         }
