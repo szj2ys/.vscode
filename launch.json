@@ -81,7 +81,7 @@
             "name": "Next.js: Debug Full Stack",
             "type": "node-terminal",
             "request": "launch",
-            "command": "npm run dev",
+            "command": "yarn generate-client && yarn generate-graphql && yarn dev",
             "cwd": "${workspaceFolder}",
             "env": {
                 "NODE_ENV": "development"
