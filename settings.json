@@ -153,14 +153,11 @@
         "**/package-lock.json": true,
         "**/.DS_Store": true,
         "**/.git": true,
-        "**/.gitignore": true,
         "**/.idea": true,
         "**/.svn": true,
         "**/.venv": true,
-        "**/.vscode": true,
         "**/build": true,
         "**/dist": true,
-        "**/tmp": true,
         "**/yarn.lock": true
     },
 

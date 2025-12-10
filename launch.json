@@ -123,6 +123,9 @@
                     "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
                 }
             },
+            "autoReload": {
+                "enable": true
+            },
             "justMyCode": false
         },
         {
@@ -153,6 +156,9 @@
                     "ENVIRONMENT": "development"
                 }
             },
+            "autoReload": {
+                "enable": true
+            },
             "justMyCode": false
         },
         // ============================================================================
@@ -181,6 +187,9 @@
                     "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
                 }
             },
+            "autoReload": {
+                "enable": true
+            },
             "justMyCode": false
         },
         {
@@ -206,6 +215,9 @@
                     "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
                 }
             },
+            "autoReload": {
+                "enable": true
+            },
             "justMyCode": false
         },
         {
@@ -230,6 +242,9 @@
                     "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
                 }
             },
+            "autoReload": {
+                "enable": true
+            },
             "justMyCode": false
         },
         {
@@ -253,6 +268,9 @@
                 "env": {
                     "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
                 }
+            },
+            "autoReload": {
+                "enable": true
             },
             "justMyCode": false
         }
