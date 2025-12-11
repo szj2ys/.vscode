@@ -165,20 +165,21 @@
         // PYTHON TESTING
         // ============================================================================
         {
-            "name": "Pytest: Current File (Verbose)",
+            "name": "Pytest: Debug Tests (Default)",
             "type": "debugpy",
             "request": "launch",
-            "module": "pytest",
+            "purpose": [
+                "debug-test"
+            ],
             "args": [
-                "-v",
-                "--tb=short",
-                "${file}"
+                "-s",
+                "-v"
             ],
             "console": "integratedTerminal",
             // "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
             },
@@ -193,7 +194,7 @@
             "justMyCode": false
         },
         {
-            "name": "Pytest: Current File (Show Output)",
+            "name": "Pytest: Current File",
             "type": "debugpy",
             "request": "launch",
             "module": "pytest",
@@ -206,7 +207,7 @@
             // "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart",
             "redirectOutput": true,
-            "cwd": "${fileDirname}",
+            "cwd": "${workspaceFolder}",
             "env": {
                 "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
             },

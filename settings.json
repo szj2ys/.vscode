@@ -369,6 +369,8 @@
 
     // Python testing configuration
     "python.testing.pytestArgs": [
+        "-s",
+        "-v",
         "tests"
     ],
     // Python testing framework settings
