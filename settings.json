@@ -305,6 +305,9 @@
     "scm.diffDecorations": "all",
     "scm.alwaysShowRepositories": true,
 
+    // Diff editor settings — always show unchanged regions in Git diffs
+    "diffEditor.hideUnchangedRegions.enabled": false,
+
     // ============================================================================
     // PYTHON DEVELOPMENT
     // ============================================================================
