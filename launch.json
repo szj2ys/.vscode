@@ -55,7 +55,7 @@
             "name": "Next.js: Debug Server-side",
             "type": "node-terminal",
             "request": "launch",
-            "command": "npm run dev",
+            "command": "yarn generate-client && yarn generate-graphql && yarn dev",
             "cwd": "${workspaceFolder}",
             "env": {
                 "NODE_ENV": "development"
@@ -63,7 +63,13 @@
             "skipFiles": [
                 "<node_internals>/**",
                 "**/node_modules/**"
-            ]
+            ],
+            "serverReadyAction": {
+                "pattern": "- Local:.+(https?://.+)",
+                "uriFormat": "%s",
+                // // Auto open browser when Next.js server is ready
+                // "action": "debugWithChrome",
+            }
         },
         {
             "name": "Next.js: Debug Client-side",
@@ -79,22 +85,33 @@
         },
         {
             "name": "Next.js: Debug Full Stack",
-            "type": "node-terminal",
+            "type": "node",
             "request": "launch",
-            "command": "yarn generate-client && yarn generate-graphql && yarn dev",
+            "program": "${workspaceFolder}/node_modules/next/dist/bin/next",
+            "args": [
+                "dev"
+            ],
+            "runtimeArgs": [
+                "--inspect"
+            ],
             "cwd": "${workspaceFolder}",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "serverReadyAction": {
+                // // Auto open browser when Next.js server is ready
+                // "action": "debugWithChrome",
+                "killOnServerStop": true,
+                "pattern": "- Local:.+(https?://.+)",
+                "uriFormat": "%s",
+                "webRoot": "${workspaceFolder}"
+            },
             "env": {
                 "NODE_ENV": "development"
             },
-            "skipFiles": [
-                "<node_internals>/**",
-                "**/node_modules/**"
-            ],
-            "serverReadyAction": {
-                "pattern": "- Local:.+(https?://.+)",
-                "uriFormat": "%s",
-                "action": "debugWithChrome"
-            }
+            "internalConsoleOptions": "openOnSessionStart",
+            "console": "internalConsole",
+            "outputCapture": "std"
         },
         // ============================================================================
         // PYTHON DEBUGGING
