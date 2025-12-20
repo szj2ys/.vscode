@@ -332,7 +332,7 @@
     // Python environment settings
     "python.disableInstallationCheck": false,
     "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
-    "python.envFile": "${workspaceFolder}/.env",
+    "python.envFile": "${workspaceFolder}/.vscode/.env",
 
     // Python terminal settings
     "python.terminal.activateEnvironment": true,
