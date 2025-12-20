@@ -281,6 +281,7 @@
     },
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src",
+        "PATH": "/opt/homebrew/bin:/opt/homebrew/sbin:${env:PATH}",
         "LANG": "zh_CN.UTF-8",
         "LC_ALL": "zh_CN.UTF-8"
     },
