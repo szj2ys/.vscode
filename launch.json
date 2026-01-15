@@ -133,11 +133,11 @@
             "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/src/backend"
             },
             "windows": {
                 "env": {
-                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
+                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src:${workspaceFolder}\\src\\backend"
                 }
             },
             "autoReload": {
@@ -164,12 +164,12 @@
             "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src",
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/src/backend",
                 "ENVIRONMENT": "development"
             },
             "windows": {
                 "env": {
-                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src",
+                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src:${workspaceFolder}\\src\\backend",
                     "ENVIRONMENT": "development"
                 }
             },
@@ -198,11 +198,11 @@
             "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/src/backend"
             },
             "windows": {
                 "env": {
-                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
+                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src:${workspaceFolder}\\src\\backend"
                 }
             },
             "autoReload": {
@@ -226,11 +226,11 @@
             "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/src/backend"
             },
             "windows": {
                 "env": {
-                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
+                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src:${workspaceFolder}\\src\\backend"
                 }
             },
             "autoReload": {
@@ -253,11 +253,11 @@
             "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/src/backend"
             },
             "windows": {
                 "env": {
-                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
+                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src:${workspaceFolder}\\src\\backend"
                 }
             },
             "autoReload": {
@@ -280,11 +280,11 @@
             "redirectOutput": true,
             "cwd": "${workspaceFolder}",
             "env": {
-                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src"
+                "PYTHONPATH": "${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/src/backend"
             },
             "windows": {
                 "env": {
-                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src"
+                    "PYTHONPATH": "${workspaceFolder};${workspaceFolder}\\src:${workspaceFolder}\\src\\backend"
                 }
             },
             "autoReload": {

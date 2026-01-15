@@ -15,7 +15,7 @@
           ]
         },
         "env": {
-          "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}:${workspaceFolder}/src"
+          "PYTHONPATH": "${env:PYTHONPATH}:${workspaceFolder}:${workspaceFolder}/src:${workspaceFolder}/src/backend"
         }
       },
       "presentation": {

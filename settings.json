@@ -10,7 +10,7 @@
     "editor.fontLigatures": true,
 
     // Window and zoom settings
-    "window.zoomLevel": 1.2,
+    "window.zoomLevel": 1.0,
     "window.dialogStyle": "custom",
 
     // Basic editor behavior
@@ -370,6 +370,7 @@
 
     // Python testing configuration
     "python.testing.pytestArgs": [
+        "--asyncio-debug",
         "-s",
         "-v",
         "tests"
